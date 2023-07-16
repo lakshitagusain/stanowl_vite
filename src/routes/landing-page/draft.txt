@@ -1,0 +1,115 @@
+Better Payouts:
+Our competitive payout rates are among the highest in the industry, which means that our publishers can earn more revenue with their links than they would with other platforms. Stanowl offers weekly payouts, which provide a faster and more reliable stream of income for our publishers. This approach is more transparent, trustworthy, and motivating for our publishers, which ultimately leads to better results for our platform.
+
+Faster Access to Earnings:
+We know that our publishers rely on their earnings to grow their business and cover their expenses. By offering timely payouts, we're able to provide them with fast and reliable access to their funds, ensuring the money flow our publishers need.
+
+Timely Payments:
+As Stanowl, we understand that our publisher network is critical for our success. That's why we're committed to offering timely payouts as a key part of our platform.
+
+Easy-to-Use Platform:
+Our platform is designed to be easy to use, with a simple interface that makes it easy for publishers to create, manage, and optimize their links. We also provide detailed reporting and analytics tools that enable our publishers to track their earnings and performance.
+
+Transparent and Trustworthy:
+We prioritise trust and transparency with our publisher network at Stanowl and have built a strong reputation within the industry as a reliable partner. Our weekly payouts and clear earnings statements help build a strong relationship with our publishers and provide them with a straightforward understanding of their earnings.
+
+Continuous Improvement:
+We are committed to continuous improvement and are always looking for ways to enhance our platform and improve our services. Our team of experts is constantly working to develop new features, optimize our technology, and provide our publishers with the best possible experience.
+
+Advanced Technology:
+Stanowl uses advanced technology and analytics to optimize link monetization and help publishers earn the most revenue possible. Our technology is regularly updated and improved to ensure that our publishers stay ahead of the curve.
+
+Quality Advertisers:
+We work with a network of high-quality advertisers who are eager to partner with our publishers. This means that our publishers have access to the best brands and products, which can help to increase click-through rates and revenue.
+
+Excellent Support:
+Our dedicated support team is available 24/7 to assist publishers with any questions or concerns they may have. We're committed to providing our publishers with the best support possible, and we're always available to help them succeed.
+
+Flexible Monetization Options:
+Stanowl offers a range of monetization options to suit the needs of different publishers. Whether you're looking to monetize links, social media, or other content, we have the expertise and technology to help you succeed.
+
+
+
+
+Customizable Monetization Solutions:
+We understand that every publisher has unique needs and requirements. That's why we offer customizable monetization solutions that can be tailored to meet the needs of individual publishers. This approach ensures that our publishers can maximize their revenue potential.
+
+
+
+
+
+
+
+
+
+Unique Dashboard
+
+Stanowl's Dashboard is a powerful all-in-one platform which provide our publishers with a wide range of tool and features.<br/>
+With our dashboard, you can view your daily weekly and monthly earnings, along with your click-through rate, conversion rate, and other important metrics. You can also view a breakdown of your earnings by country, device, and other factors to help you understand where your traffic is coming from and how it's performing.<br/>
+We also provide detailed analytics on your audience demographics, such as age, gender, location, and interests. With this information, you can better understand your audience and create content that resonates with them, leading to higher engagement and revenue.<br/>
+But that's not all. Our platform also includes a range of optimization tools to help you improve your earnings even further. You can create custom campaigns and links to track your performance in real-time, split-test different landing pages to see which ones perform best, and even get personalized recommendations on how to optimize your campaigns for maximum results.<br/>
+With Stanowl, you have everything you need to succeed as a publisher in today's competitive market. So why wait? Sign up today and start earning more with every click!
+
+
+
+
+<Tabs
+            defaultActiveKey="profile"
+            id="justify-tab-example"
+            className="mb-3 feature-tabs"
+            justify
+            >
+                <Tab className="feature" eventKey="feature-1" title="Timely Payments">
+                    <Accordion defaultActiveKey="0">
+                        <Accordion.Item eventKey="0">
+                            <Accordion.Header>subfeature-1</Accordion.Header>
+                            <Accordion.Body>
+                            subfeature1
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <Accordion.Item eventKey="1">
+                            <Accordion.Header>subfeature-2</Accordion.Header>
+                            <Accordion.Body>
+                            subfeature2
+                            </Accordion.Body>
+                        </Accordion.Item>
+                    </Accordion>
+                </Tab>
+                <Tab className="feature" eventKey="feature-2" title="Best in the Industry">
+                    <Accordion defaultActiveKey="0">
+                        <Accordion.Item eventKey="0">
+                            <Accordion.Header>subfeature-1</Accordion.Header>
+                            <Accordion.Body>
+                            subfeature1
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <Accordion.Item eventKey="1">
+                            <Accordion.Header>subfeature-2</Accordion.Header>
+                            <Accordion.Body>
+                            subfeature2
+                            </Accordion.Body>
+                        </Accordion.Item>
+                    </Accordion>
+                </Tab>
+                <Tab className="feature" eventKey="feature-3" title="Better Payouts" >
+                    <p>hehe</p>
+                </Tab>
+
+                <Tab className="feature" eventKey="feature-4" title="Excellent Support" >
+                    <Accordion defaultActiveKey="0">
+                        <Accordion.Item eventKey="0">
+                            <Accordion.Header>subfeature-1</Accordion.Header>
+                            <Accordion.Body>
+                            subfeature1
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <Accordion.Item eventKey="1">
+                            <Accordion.Header>subfeature-2</Accordion.Header>
+                            <Accordion.Body>
+                            subfeature2
+                            </Accordion.Body>
+                        </Accordion.Item>
+                    </Accordion>
+                </Tab>
+            </Tabs>
+        

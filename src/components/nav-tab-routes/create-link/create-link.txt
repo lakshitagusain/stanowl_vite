@@ -1,0 +1,258 @@
+{/* <TextField
+    className='select-styles'
+    select
+    defaultValue=""
+    variant="standard"
+    name="monetizationTask"
+    // value={monetizationFF.monetizationTask}
+    onChange={e => handleChange_M(index, e)}
+    >
+    {monetizationOptions.map((option) => (
+        <MenuItem key={option.value} value={option.value}>
+        {option.label}
+        </MenuItem>
+    ))}
+</TextField> */}
+
+
+ORIGINAL CREATE LINK
+
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import {useState} from 'react';
+import Button from '@mui/material/Button';
+import './create-link.styles.scss';
+import SocialMedia from './social-media/social-media.component';
+import Monetization from './monetization/monetization.component';
+const defaultFormFields = {
+    title:'',
+    destinationLink:'',
+    customURL:'',
+};
+
+const CreateLink = () =>{
+    const [formFields, setFormFields] = useState(defaultFormFields);
+    let {title, destinationLink, customURL} = formFields;
+    const resetFormFields = () =>{
+        setFormFields(defaultFormFields);
+    }
+    const handleChange = (event) =>{
+        const {name, value} = event.target;
+        setFormFields({...formFields, [name]:value});
+    };
+    const handleSubmit = (event) => {
+        window.alert("Link Created");
+        event.preventDefault();
+        alert(JSON.stringify(formValues));
+        resetFormFields();
+    }
+
+
+    return(
+        <div className='create-link-container'>
+            <div className='link-settings'>
+                <Container>
+                    <Row>
+                        <p className='box-heading'>Link Settings</p>
+                    </Row>
+                    <Row>
+                        <label>
+                            Title
+                            <br/>
+                            <input 
+                            type='text' 
+                            name='title'
+                            required 
+                            value={title}
+                            onChange={handleChange}  
+                            />
+                        </label>
+                    </Row>
+                    <Row>
+                        <label>
+                            Destination Link
+                            <br/>
+                            <input 
+                            type='text'
+                            name='destinationLink' 
+                            required 
+                            value={destinationLink}
+                            onChange={handleChange} 
+                            />
+                        </label>
+                    </Row>
+                    <Row>
+                        <label>
+                            Custom URL 
+                            <br/>
+                            <input 
+                            type='text' 
+                            name='customURL' 
+                            required 
+                            value={customURL}
+                            onChange={handleChange} 
+                            />
+                        </label>
+                    </Row>
+                    <Row>
+                        <SocialMedia />
+                    </Row>
+                    <Row>
+                        <Monetization />
+                    </Row>
+                    <Button className="button submit" type="submit" onClick={handleSubmit}>Submit</Button>
+                </Container>
+            </div>
+        </div>
+    );
+}
+
+export default CreateLink;
+
+////////////////////////////////////////////////////////////////
+ORIGINAL SOCIAL MEDIA
+
+import {useState} from 'react';
+import DoneRoundedIcon from '@mui/icons-material/DoneRounded';
+import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
+import Button from '@mui/material/Button';
+
+let SocialMediaCount=0;
+const SocialMedia = () => {
+    const [formValues, setFormValues] = useState([]);
+    let handleChange = (i, e) => {
+        let newFormValues = [...formValues];
+        newFormValues[i][e.target.name] = e.target.value;
+        setFormValues(newFormValues);
+        console.log(newFormValues)
+      }
+    
+    let addFormFields = () => {
+        if(SocialMediaCount<=4)
+        {SocialMediaCount++;
+        setFormValues([...formValues, { socialMediaTask: "", socialMediaUrl: "" }])}
+        else{
+            alert("only 5 can be added")
+        }
+      }
+    
+    let removeFormFields = (i) => {
+        let newFormValues = [...formValues];
+        newFormValues.splice(i, 1);
+        setFormValues(newFormValues)
+        SocialMediaCount--;
+    }
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+    }
+    
+    return(
+        <div>
+            <p className='add-social-media-heading'>
+                ADD SOCIAL MEDIA {SocialMediaCount}/5
+                <Button className="button add"
+                        type="button"
+                        onClick={ addFormFields }>
+                            Add
+                </Button>
+            </p>
+            <form className='social-media' onSubmit={onSubmit}>
+                {formValues.map((element, index) => (
+                    <div className="add-social-media" key={index}>
+                        <label> Task </label>
+                        <select name="socialMediaTask" onChange={e => handleChange(index, e)} required>
+                            <option value= {element.socialMediaTask ||""} ></option>
+                            <option value= {element.socialMediaTask ||"1"} >Click on Ad</option>
+                            <option value= {element.socialMediaTask ||"2"}  >Download Extension</option>
+                            <option value= {element.socialMediaTask ||"3"}  >Accept Notification</option>
+                        </select>
+                        <label>Url</label>
+                        <input type="url"  name="socialMediaUrl" value={element.socialMediaUrl || ""} onChange={e => handleChange(index, e)} required/>
+                        {
+                            (index+1)>0 ? 
+                            <Button type="button"  className="button remove" onClick={() => removeFormFields(index)}><CloseRoundedIcon/></Button> 
+                            : null
+                        }
+                        <Button type="submit"><DoneRoundedIcon/></Button>                       
+                    </div>  
+                ))}
+            </form>
+        </div>
+    );
+}
+
+export default SocialMedia;
+
+////////////////////////////////////////////////////////////////
+ORIGINAL MONETIZATION
+import {useState} from 'react';
+import DoneRoundedIcon from '@mui/icons-material/DoneRounded';
+import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
+import Button from '@mui/material/Button';
+
+let MonetizationCount=0;
+const Monetization = () => {
+    const [formValues, setFormValues] = useState([]);
+    let handleChange = (i, e) => {
+        let newFormValues = [...formValues];
+        newFormValues[i][e.target.name] = e.target.value;
+        setFormValues(newFormValues);
+        console.log(newFormValues)
+      }
+    
+    let addFormFields = () => {
+        if(MonetizationCount<=2)
+        {MonetizationCount++;
+        setFormValues([...formValues, { monetizationTask: ""}])}
+        else{
+            document.setElementById("monetization-limit").innerHTML = "only 3 can be added";
+        }
+      }
+    
+    let removeFormFields = (i) => {
+        let newFormValues = [...formValues];
+        newFormValues.splice(i, 1);
+        setFormValues(newFormValues)
+        MonetizationCount--;
+    }
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+    }
+    
+    return(
+        <div>
+            <p className='add-social-media-heading'>
+                ADD SOCIAL MEDIA {MonetizationCount}/3
+                <Button className="button add"
+                        type="button"
+                        onClick={ addFormFields }>
+                            Add
+                </Button>
+            </p>
+            <form className='social-media' onSubmit={onSubmit}>
+                {formValues.map((element, index) => (
+                    <div className="add-social-media" key={index}>
+                        <label> Task </label>
+                        <select name="monetizationTask" onChange={e => handleChange(index, e)} required>
+                            <option value= {element.monetizationTask ||""} ></option>
+                            <option value= {element.monetizationTask ||"1"} >Click on Ad</option>
+                            <option value= {element.monetizationTask ||"2"}  >Download Extension</option>
+                            <option value= {element.monetizationTask ||"3"}  >Accept Notification</option>
+                        </select>
+                        {
+                            (index+1)>0 ? 
+                            <Button type="button"  className="button remove" onClick={() => removeFormFields(index)}><CloseRoundedIcon/></Button> 
+                            : null
+                        }
+                        <Button type="submit"><DoneRoundedIcon/></Button>                       
+                    </div>  
+                ))}
+            </form>
+            <p id="monetization-limit"></p>
+        </div>
+    );
+}
+
+export default Monetization;

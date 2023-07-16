@@ -1,0 +1,82 @@
+body{
+    /* background: #0F2027;
+background: -webkit-linear-gradient(to right, #0F2027, #325c69, #0F2027);
+background: linear-gradient(to right, #0F2027, #203A43, #0F2027); */
+padding-left: 20px;
+}
+.square{
+    position: relative;
+    border-radius: 22px;
+    border: 4px solid;
+    padding: 20px;
+}
+.s1{
+    border-style: solid;
+    width: 90px;
+    height: 90px;
+    animation: ani2 10s infinite ;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.s2{
+    border-style: dashed;
+    width: 85px;
+    height: 85px;
+    animation: ani1 10s infinite ;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.s3{
+    border-style: dotted;
+    width: 100px;
+    height: 100px;
+    animation: ani2 10s infinite ;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.s4{
+    border-style: solid;
+    width: 75px;
+    height: 75px;
+    animation: ani1 10s infinite ;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes ani1 {
+    0%  { border-color:rgb(228, 191, 197); top:0px; transform: rotate(-360deg)}
+    100% {border-color:white; top:335px; transform: rotate(360deg)}
+}
+@keyframes ani2 {
+    0%  { border-color:rgb(106, 209, 192); top:335px; transform: rotate(-360deg)}
+    100% {border-color:white; top: 0px; transform: rotate(360deg)}
+}
+
+
+@media (min-width: 980px) and  (max-width: 1209px){
+body{
+    padding-left:50px
+}
+.col.lg{
+    display: none;
+}
+}
+@media (min-width: 739px) and  (max-width: 980px){
+body{
+    padding-left:50px
+}
+.col.md{
+    display: none;
+}
+}
+@media (max-width: 738px){
+body{
+    padding-left:50px
+}
+.col.sm{
+    display: none;
+}
+}

@@ -1,0 +1,24 @@
+.tab-box{
+    display:flex;
+    justify-self: center;
+    .Mui-selected{
+        background-color: #203A43 !important;
+        opacity: 0.8;
+    }
+    .MuiTab-root{
+        background-color: transparent;
+        border-radius: 20px !important;
+
+    }
+    .MuiTabs-flexContainer{
+        align-items: center !important;
+    }
+    .tab-style{
+        align-self: center;
+        width: 90%;
+    }
+    span.MuiTabs-indicator{
+        color:rgba(255, 255, 255, 0);
+        height: 0px !important;
+    }
+}

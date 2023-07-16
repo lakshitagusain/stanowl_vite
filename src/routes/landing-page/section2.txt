@@ -1,0 +1,107 @@
+<Row xs={1} md={2}  lg={4} className="g-4">
+                    <Col>
+                    <Card>
+                        <Card.Body>
+                        <Card.Title><AlarmOnRoundedIcon/>Timely Payments</Card.Title>
+                        <Card.Text>
+                        As Stanowl, we understand that our publisher network is critical for our success. That's why we're committed to offering timely payouts as a key part of our platform. Here's why we believe timely payouts are so important for publishers
+                            <Accordion className='accordion-box'>
+                                <Accordion.Item eventKey="0">
+                                    <Accordion.Header>Faster Access to Earnings</Accordion.Header>
+                                    <Accordion.Body>
+                                    We know that our publishers rely on their earnings to grow their business and cover their expenses. By offering timely payouts, we're able to provide them with fast and reliable access to their funds, ensuring the money flow our publishers need.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="1">
+                                    <Accordion.Header>Transparent and Trustworthy</Accordion.Header>
+                                    <Accordion.Body>
+                                    We prioritise trust and transparency with our publisher network at Stanowl. Our weekly payouts and clear earnings statements build a strong relationship with our publishers and provide them with a straightforward understanding of their earnings.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="2">
+                                    <Accordion.Header>Keeps you motivated</Accordion.Header>
+                                    <Accordion.Body>
+                                    By offering weekly payouts, we provide a clear incentive for our publishers to generate more clicks and drive better engagement. This tangible reward motivates our publishers to work harder and produce optimal results for our platform..
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                            </Accordion>
+                        </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    </Col>
+                    <Col>
+                    <Card>
+                        <Card.Body>
+                        <Card.Title>Best in the industry</Card.Title>
+                        <Card.Text>
+                            <Accordion >
+                                <Accordion.Item eventKey="0">
+                                    <Accordion.Header>Advanced Technology</Accordion.Header>
+                                    <Accordion.Body>
+                                    Stanowl uses advanced technology and analytics to optimize link monetization and help publishers earn the most revenue possible. Our technology is regularly updated and improved to ensure that our publishers stay ahead of the curve.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="1">
+                                    <Accordion.Header>Flexible Monetization Options</Accordion.Header>
+                                    <Accordion.Body>
+                                    Stanowl offers a range of monetization options to suit the needs of different publishers. Whether you're looking to monetize links, social media, or other content, we have the expertise and technology to help you succeed.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="2">
+                                    <Accordion.Header>Quality Advertisers</Accordion.Header>
+                                    <Accordion.Body>
+                                    We work with a network of high-quality advertisers who are eager to partner with our publishers. This means that our publishers have access to the best brands and products, which can help to increase click-through rates and revenue.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="3">
+                                    <Accordion.Header>Easy-to-Use Platform</Accordion.Header>
+                                    <Accordion.Body>
+                                    Our platform is designed to be easy to use, with a simple interface that makes it easy for publishers to create, manage, and optimize their links. We also provide detailed reporting and analytics tools that enable our publishers to track their earnings and performance.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="4">
+                                    <Accordion.Header>Customizable Monetization Solutions</Accordion.Header>
+                                    <Accordion.Body>
+                                    We understand that every publisher has unique needs and requirements. That's why we offer customizable monetization solutions that can be tailored to meet the needs of individual publishers. This approach ensures that our publishers can maximize their revenue potential.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                            </Accordion>
+                        </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    </Col>
+                    <Col>
+                    <Card>
+                        <Card.Body>
+                        <Card.Title>Better Payouts</Card.Title>
+                        <Card.Text>
+                        Our competitive payout rates are among the highest in the industry, which means that our publishers can earn more revenue with their links than they would with other platforms. Stanowl offers weekly payouts, which provide a faster and more reliable stream of income for our publishers. This approach is more transparent, trustworthy, and motivating for our publishers, which ultimately leads to better results for our platform.
+                        </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    </Col>
+                    <Col>
+                    <Card>
+                        <Card.Body>
+                        <Card.Title><SupportAgentRoundedIcon/>Excellent Support</Card.Title>
+                        <Card.Text>
+                        Our dedicated support team is available 24/7 to assist publishers with any questions or concerns they may have. We're committed to providing our publishers with the best support possible, and we're always available to help them succeed.
+                            <Accordion className='accordion-box'>
+                                <Accordion.Item eventKey="1">
+                                    <Accordion.Header>Continuous Improvement</Accordion.Header>
+                                    <Accordion.Body>
+                                    We are committed to continuous improvement and are always looking for ways to enhance our platform and improve our services. Our team of experts is constantly working to develop new features, optimize our technology, and provide our publishers with the best possible experience.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="2">
+                                    <Accordion.Header>Trustable Network</Accordion.Header>
+                                    <Accordion.Body>
+                                    Stanowl has built a strong reputation within the industry as a reliable and trustworthy partner for publishers. Our commitment to transparency, quality, and innovation has helped us to earn the trust of our partners and build long-lasting relationships.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                            </Accordion>
+                        </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    </Col>
+                </Row>

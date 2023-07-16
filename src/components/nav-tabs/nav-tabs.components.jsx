@@ -1,0 +1,51 @@
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import { TabContext, TabList } from "@mui/lab";
+import TabPanel from '@mui/lab/TabPanel';
+import AddLinkOutlinedIcon from '@mui/icons-material/AddLinkOutlined';
+import { Link , Outlet} from 'react-router-dom';
+import './nav-tabs.styles.scss'
+import CreateLink from '../nav-tab-routes/create-link/create-link.components';
+import Stats from '../nav-tab-routes/stats/stats.components';
+
+
+const NavTabs = () => {
+  const [tabId, setTabId] = React.useState("tab1");
+  const handleChange = (event, id) => setTabId(id);
+  return (
+    
+    <Box sx={{ width: '100%' }} >
+      {/* <TabContext value={tabId}> */}
+      <TabList
+      className='tab-box'
+      orientation="vertical"
+      value={tabId}
+      onChange={handleChange}
+      aria-label="Vertical tabs example"
+      >
+        <Tab 
+          className='tab-style'
+          icon={<AddLinkOutlinedIcon style={{ color: 'white' }}/>}
+          iconPosition="start"
+          label={<span style={{ color: 'white' }}>Create Link</span>}
+          color='primary'
+          value='1'
+          />
+
+        <Tab 
+          className='tab-style'
+          icon={<AddLinkOutlinedIcon style={{ color: 'white' }}/>}
+          iconPosition="start"
+          label={<span style={{ color: 'white' }}>Stats</span>}
+          color='primary'
+          value='2'
+          />
+      </TabList>
+      <Outlet/>
+    </Box>
+  );
+}
+export default NavTabs;
+

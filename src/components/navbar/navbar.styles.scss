@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+Background{
+  position: absolute;
+  z-index: 0;
+}
+CreateLink{
+  position: absolute;
+  z-index: 1;
+}
+Stats{
+  position: absolute;
+  z-index: 2;
+}
+#root{
+  background-color: #bdc3c7;
+  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.left-nav{
+
+    .divider{
+      border-color: white !important;
+    }
+    .MuiToolbar-gutters{
+        min-height: 70px;
+        background-color: transparent;
+    }
+    .MuiDrawer-paper{
+        // top: 65px;
+        position: fixed;
+        height:97%;
+        width: 25%;
+        // background-color: rgb(6, 17, 31);
+        background: #0F2027;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        border-radius: 10px;
+        color: white;
+        margin: 7px !important;
+    }
+    .divider{
+        border-color: white;
+    }
+    img{
+      // display:flex !important;
+      // text-align: center;
+      margin-top: 15px;
+      width:50px;
+    }
+    h4{
+      color:rgb(255, 255, 255);
+      display: inline-block;
+    }
+    .left-nav-bar.MuiBox-root{
+      align-items: center !important;
+    }
+    .tab-box{
+      display:flex;
+      justify-content: center;
+      .Mui-selected{
+          background-color: #3e6774 !important;
+          color: transparent;
+          opacity: 1;
+      }
+      .MuiTab-root{
+          background-color: transparent;
+          border-radius: 10px !important;
+      }
+      .MuiTabs-flexContainer{
+          align-items: center !important;
+      }
+      .tab-style{
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 13px;
+        align-self: center;
+        width: 85%;
+        min-height: 10px;
+        justify-content: left;
+      }
+      span.MuiTabs-indicator{
+          color:rgba(255, 255, 255, 0);
+          height: 0px !important;
+      }
+  }
+  .button-box{
+    // display: flex;
+    // justify-content: center;
+    // position: absolute;
+    // bottom: 0;
+    position:absolute;
+    bottom: 40px;
+    left: 0%;
+    right: 0%;
+    text-align: center;
+    .logout-button{
+      color: white;
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 13px;
+      border-color: white;
+      border-radius: 10px !important;
+      outline: none;
+    }
+    .logout-button:active{
+    border-style: outset;
+    }
+  }
+}
+
+.appbar-style{
+  // border-radius: 15px;
+  background-color:  #0F2027!important;
+  box-shadow: none !important;
+  color: white;
+  border-radius: 10px;
+  margin: 10px;
+  min-height: 50px !important;
+  height: 50px;
+
+  .topbar-style{
+    display: flex;
+    min-height: 40px !important;
+    height: 50px;
+    .topbar-text{
+      text-align: left;
+      font-size: 18px;
+      font-family: 'Titillium Web', sans-serif;
+    }
+    .topbar-icon{
+      margin-left: 10px;
+    }
+    /*p{
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 13px;
+      margin: 5px
+    }*/
+    }
+  } 
+.MuiTabPanel-root{
+  position: relative;
+  width: 100%;
+  top: 50px;
+  justify-content: center !important;
+  
+}
+// @media (max-width: 605px){
+//   .MuiTabPanel-root{
+//     left: 0px;
+//   }
+// }
+
+
+
+// .topbar-style{
+//     // display: flex;
+//     // align-self: flex-end;
+//     //background-color: #0F2027; 
+// }
+
+// .navigation {
+//   position: fixed;
+//     height: 50px;
+//     width: 100%;
+//     display: flex;
+//     justify-content: space-between;
+//     margin-bottom: 25px;
+  
+//   .h2{
+//       padding-left:10px;
+//   }
+//   .nav-links-container {
+//     width: 50%;
+//     height: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-end;
+    
+//     .nav-link {
+//       padding: 50px 35px;
+//       cursor: pointer;
+//     }
+//   }
+// }
